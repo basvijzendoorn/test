@@ -21,6 +21,7 @@ model User {
 model Price {
   createdAt DateTime @default(now())
   id        String   @id @default(cuid())
-  price     Float?
+  Price     Float
+  ticker    String?
   updatedAt DateTime @updatedAt
 }

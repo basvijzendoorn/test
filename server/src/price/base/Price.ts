@@ -32,15 +32,23 @@ class Price {
   id!: string;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: Number,
   })
   @IsNumber()
+  @Field(() => Number)
+  Price!: number;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
   @IsOptional()
-  @Field(() => Number, {
+  @Field(() => String, {
     nullable: true,
   })
-  price!: number | null;
+  ticker!: string | null;
 
   @ApiProperty({
     required: true,

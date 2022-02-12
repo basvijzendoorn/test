@@ -1,3 +1,6 @@
+import { Price } from "./Price";
+
 export type PriceUpdateInput = {
-  price?: number | null;
+  Price?: number;
+  ticker?: string | null;
 };

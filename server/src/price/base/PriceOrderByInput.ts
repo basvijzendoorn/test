@@ -12,6 +12,7 @@
 import { InputType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
 import { SortOrder } from "../../util/SortOrder";
+import { Price } from "./Price";
 
 @InputType({
   isAbstract: true,
@@ -43,7 +44,16 @@ class PriceOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
-  price?: SortOrder;
+  Price?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["Asc", "Desc"],
+  })
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
+  ticker?: SortOrder;
 
   @ApiProperty({
     required: false,

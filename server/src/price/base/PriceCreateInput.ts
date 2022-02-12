@@ -11,18 +11,27 @@
   */
 import { InputType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
-import { IsNumber, IsOptional } from "class-validator";
+import { IsNumber, IsString, IsOptional } from "class-validator";
+import { Price } from "./Price";
 @InputType()
 class PriceCreateInput {
   @ApiProperty({
-    required: false,
+    required: true,
     type: Number,
   })
   @IsNumber()
+  @Field(() => Number)
+  Price!: number;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
   @IsOptional()
-  @Field(() => Number, {
+  @Field(() => String, {
     nullable: true,
   })
-  price?: number | null;
+  ticker?: string | null;
 }
 export { PriceCreateInput };

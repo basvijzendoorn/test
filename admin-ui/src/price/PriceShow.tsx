@@ -13,7 +13,8 @@ export const PriceShow = (props: ShowProps): React.ReactElement => {
       <SimpleShowLayout>
         <DateField source="createdAt" label="Created At" />
         <TextField label="ID" source="id" />
-        <TextField label="price" source="price" />
+        <TextField label="Price" source="Price" />
+        <TextField label="Ticker" source="ticker" />
         <DateField source="updatedAt" label="Updated At" />
       </SimpleShowLayout>
     </Show>
