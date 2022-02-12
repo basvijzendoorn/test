@@ -74,7 +74,8 @@ export class PriceControllerBase {
       select: {
         createdAt: true,
         id: true,
-        price: true,
+        Price: true,
+        ticker: true,
         updatedAt: true,
       },
     });
@@ -111,7 +112,8 @@ export class PriceControllerBase {
       select: {
         createdAt: true,
         id: true,
-        price: true,
+        Price: true,
+        ticker: true,
         updatedAt: true,
       },
     });
@@ -147,7 +149,8 @@ export class PriceControllerBase {
       select: {
         createdAt: true,
         id: true,
-        price: true,
+        Price: true,
+        ticker: true,
         updatedAt: true,
       },
     });
@@ -204,7 +207,8 @@ export class PriceControllerBase {
         select: {
           createdAt: true,
           id: true,
-          price: true,
+          Price: true,
+          ticker: true,
           updatedAt: true,
         },
       });
@@ -241,7 +245,8 @@ export class PriceControllerBase {
         select: {
           createdAt: true,
           id: true,
-          price: true,
+          Price: true,
+          ticker: true,
           updatedAt: true,
         },
       });

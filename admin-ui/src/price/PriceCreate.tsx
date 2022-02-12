@@ -1,11 +1,18 @@
 import * as React from "react";
-import { Create, SimpleForm, CreateProps, NumberInput } from "react-admin";
+import {
+  Create,
+  SimpleForm,
+  CreateProps,
+  NumberInput,
+  TextInput,
+} from "react-admin";
 
 export const PriceCreate = (props: CreateProps): React.ReactElement => {
   return (
     <Create {...props}>
       <SimpleForm>
-        <NumberInput label="price" source="price" />
+        <NumberInput label="Price" source="Price" />
+        <TextInput label="Ticker" source="ticker" />
       </SimpleForm>
     </Create>
   );

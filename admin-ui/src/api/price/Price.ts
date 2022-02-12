@@ -1,6 +1,7 @@
 export type Price = {
   createdAt: Date;
   id: string;
-  price: number | null;
+  Price: number;
+  ticker: string | null;
   updatedAt: Date;
 };

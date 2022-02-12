@@ -13,27 +13,31 @@ const existingId = "existingId";
 const CREATE_INPUT = {
   createdAt: new Date(),
   id: "exampleId",
-  price: 42.42,
+  Price: 42.42,
+  ticker: "exampleTicker",
   updatedAt: new Date(),
 };
 const CREATE_RESULT = {
   createdAt: new Date(),
   id: "exampleId",
-  price: 42.42,
+  Price: 42.42,
+  ticker: "exampleTicker",
   updatedAt: new Date(),
 };
 const FIND_MANY_RESULT = [
   {
     createdAt: new Date(),
     id: "exampleId",
-    price: 42.42,
+    Price: 42.42,
+    ticker: "exampleTicker",
     updatedAt: new Date(),
   },
 ];
 const FIND_ONE_RESULT = {
   createdAt: new Date(),
   id: "exampleId",
-  price: 42.42,
+  Price: 42.42,
+  ticker: "exampleTicker",
   updatedAt: new Date(),
 };
 
