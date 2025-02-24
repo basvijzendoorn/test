@@ -12,9 +12,8 @@ export type PriceCreateInput = {
   region?: string[] | null;
 
   seasonalDiscount?: boolean | null;
-  
-  validUntil?:  | null;
-  tags?: string[] | null;
+    tags?: string[] | null;
   amount?: number | null;
+  
 
 };
