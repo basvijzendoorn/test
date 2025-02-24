@@ -14,6 +14,8 @@ export type PriceCreateInput = {
   seasonalDiscount?: boolean | null;
     tags?: string[] | null;
   amount?: number | null;
+
+  
   
 
 };
