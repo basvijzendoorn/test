@@ -5,7 +5,6 @@ export type PriceCreateInput = {
 
 
   description?: string | null;
-  isActive?: boolean | null;
 
 
  
