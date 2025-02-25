@@ -11,11 +11,8 @@ export type PriceCreateInput = {
   tier?:  | null;
   region?: string[] | null;
 
-  seasonalDiscount?: boolean | null;
-    tags?: string[] | null;
-  amount?: number | null;
 
-  
+
   
 
 };
