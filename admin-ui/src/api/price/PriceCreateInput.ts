@@ -8,11 +8,7 @@ export type PriceCreateInput = {
   isActive?: boolean | null;
 
 
-  tier?:  | null;
-  region?: string[] | null;
-
-
-
+ 
   
 
 };
